@@ -3,13 +3,13 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   // TODO: Send the ""Hello, world!"" response
-  res.write("Hello world");
+  res.write("Hello, world!");
   res.end();
 });
 
 server.listen(port, () => {
   // TODO: Log a message to the console when the server starts listening on the port
-  console.log("listening to port 3000");
+  console.log(`Server is listening on port ${port}`);
 });
 
 // DO NOT EDIT BELOW THIS LINE
